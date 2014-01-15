@@ -3,7 +3,10 @@
 	<head>
 		<meta name="viewport" content="width=device-width" />
 
-        <link rel="stylesheet" type="text/css" href="http://meyerweb.com/eric/tools/css/reset/reset.css" media="all">       
+        <link rel="stylesheet" type="text/css" href="http://meyerweb.com/eric/tools/css/reset/reset.css" media="all">       		
+		<link rel="stylesheet" type="text/css" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+
+		
 		<style type="text/css">
 			html {
 				font-family: 'open sans', sans-serif;
@@ -98,7 +101,7 @@
 			.page-wrap {
 				min-height: 100%;
 				/* equal to footer height */
-				margin-bottom: -130px; 
+				margin-bottom: -115px; 
 			}
 			
 			.page-wrap:after {
@@ -165,8 +168,20 @@
 			footer {			
 				color: #ddd;
 				padding: 15px;
+				width: 100%;
+				text-align: center;				
 				/*background-color: #e9f7f7;*/
 				background-image: -webkit-linear-gradient(top, #999, #AAA 100%);
+			}
+			
+			footer i {
+				margin: 2px;
+				padding: 2px;
+			}	
+			
+			footer a {
+				color: #ddd;
+				text-decoration: none;
 			}
 			
 			/*
@@ -239,10 +254,10 @@
 						<span class="tech-blog">Tech Blog</span>
 					</a>
 				</div>			
-				<ul>
+				<ul>					
 					<a href="#"><li>app<span class="small-plural">s</span></li></a>
 					<a href="#"><li>api<span class="small-plural">s</span></li></a>
-					<a href="#"><li>github</li></a>
+					<a href="#"><li>github</li></a>					
 				</ul>
 			</header>
 			<div class="blue-line">
@@ -316,8 +331,11 @@
 				</div>
 			</div>
 		</div>
-		<footer>
-			hello i'm the footer
+		<footer class="fa">
+			<a href="#"><i class="fa fa-search"></i>Search</a>
+			<a href="#"><i class="fa fa-github-alt"></i>GitHub</a>
+			<a href="#"><i class="fa fa-twitter"></i>Twitter</a>
+			<a href="#"><i class="fa fa-google-plus-square"></i>Google+</a>			
 		</footer>
 	</body>
 </html>
