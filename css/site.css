@@ -1,0 +1,243 @@
+html {
+	font-family: 'open sans', sans-serif;
+	font-weight: 400;
+	background-color: #FFF;
+}
+
+html, body {
+	height: 100%;
+	width: 100%;
+}
+
+header {			
+	position: fixed;
+	width: 100%;			
+	top: 0;
+	padding: 10px 0px 10px 0px;
+	z-index: 1;
+	color: white;				
+	text-transform: uppercase;				
+	background-color: #da5232; /* fallback color if gradients are not supported */
+	background-image: -webkit-linear-gradient(top, #da5232, #bf5339 100%); /* For Chrome and Safari */
+	background-image:    -moz-linear-gradient(top, #da5232, #bf5339 100%); /* For old Fx (3.6 to 15) */
+	background-image:     -ms-linear-gradient(top, #da5232, #bf5339 100%); /* For pre-releases of IE 10*/
+	background-image:      -o-linear-gradient(top, #da5232, #bf5339 100%); /* For old Opera (11.1 to 12.0) */ 
+	background-image:         linear-gradient(to bottom, #da5232, #bf5339 100%); /* Standard syntax; must be last */
+}
+
+header > div {
+	display: inline;
+}
+
+.brand {
+	margin-left: 16px;
+}
+
+.menu-button {
+	padding: -1px 0px 0px 4px;
+	padding-left: 5px;
+	border: 1.5px solid white;
+	border-radius: 4px;
+}
+
+.boz {
+	font-weight: 700;
+	padding-left: 8px;
+}
+
+.tech-blog {
+	font-weight: 300;
+}
+
+header ul {
+	display: inline;
+	float: right;
+	margin-right: 15px;
+}
+	
+header ul li {
+	display: inline;
+	text-decoration: none;				
+	padding: 7px;
+}
+
+header ul li:hover {
+	/*background-color: #e54827;*/
+	background-color: #c54424;
+}
+
+.small-plural {
+	text-transform: none;
+}
+
+header a {
+	text-decoration: none;
+	color: white;
+}
+			
+.dark-hover:hover {
+	background-color: #c54424;
+}
+
+.blue-line {
+	width: 100%;
+	height: 3px;
+	background-color: #ceedf4;
+}
+
+.hr {
+	margin-top: 0px;
+	margin-bottom: 8px;
+	border-top: 1px inset;
+	border-bottom: 1px inset;
+	width: 100%;
+}
+
+.content {
+	width: 940px;
+	margin: auto;
+	padding-top: 36px;			
+}
+
+.content a {
+	color: #333;
+}				
+			
+.post {
+	margin: 8px 0 8px 0;
+}
+
+.right {
+	text-align: right;
+}
+
+.post-date {
+	width: 60px;
+	display: inline-block;
+	text-align: center;				
+	line-height: 1;
+	margin-right: 8px;
+	padding: 3px;
+	background-color: #444444;
+	color: #ceedf4;				
+}
+
+.month {
+	font-size: 1em;
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+.date {
+	font-size: 1.7em;
+	font-weight: 700;
+	letter-spacing: 4px;
+}
+
+.year {
+	font-size: 1em;
+	font-weight: 300;
+}			
+
+.preview {
+	display: inline-block;
+	letter-spacing: 1px;
+	font-weight: 300;
+}
+
+.title {
+	font-size: 2em;			
+	color: #da5232;
+}
+
+.description {
+	font-size: 1.1em;				
+}
+
+.page-wrap {
+	min-height: 100%;
+	/* equal to footer height */
+	margin-bottom: -80px; 
+}
+
+.page-wrap:after {
+	content: "";
+	display: block;
+}
+
+footer, .page-wrap:after {
+	/* .push must be the same height as footer */			
+	height: 80px;
+}
+
+footer {		
+	width: 100%;
+	color: #ddd;
+	text-align: center;					
+	background-color: #999; /* fallback color if gradients are not supported */
+	background-image: -webkit-linear-gradient(top, #999, #AAA 100%); /* For Chrome and Safari */
+	background-image:    -moz-linear-gradient(top, #999, #AAA 100%); /* For old Fx (3.6 to 15) */
+	background-image:     -ms-linear-gradient(top, #999, #AAA 100%); /* For pre-releases of IE 10*/
+	background-image:      -o-linear-gradient(top, #999, #AAA 100%); /* For old Opera (11.1 to 12.0) */ 
+	background-image:         linear-gradient(to bottom, #999, #AAA 100%); /* Standard syntax; must be last */
+}
+
+footer i {
+	margin: 2px;
+	padding: 2px;
+}	
+
+footer a {
+	color: #ddd;
+	text-decoration: none;
+}
+
+/*
+ * Media Queries
+ */
+
+/* Desktop */
+@media (min-width: 980px) {
+	.content {
+		width: 960px;
+	}
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+	.content {
+		width: 747px;
+	}
+}
+
+/* Landscape phones to Portait Tablets */
+@media (min-width: 481px) and (max-width: 767px) {
+	.content {
+		width: 460px;
+	}
+}
+
+/* Landscape phones */
+@media (min-width: 321px) and (max-width: 480px) {
+	.content {
+		width: 300px;
+	}
+	
+	header ul {
+		visibility:	collapse;
+		display: none;
+	}				
+}
+
+/* Portrait phones and down */
+@media (max-width: 320px) {
+	.content {
+		width: 300px;
+	}
+	
+	header ul {
+		visibility:	collapse;
+		display: none;
+	}
+}
